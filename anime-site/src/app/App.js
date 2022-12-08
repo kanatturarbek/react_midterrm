@@ -1,18 +1,22 @@
 import React from 'react';
+import { BrowserRouter, Router } from 'react-router-dom';
 import './App.css';
 import Footer from './footer/Footer';
 import Header from './header/Header';
+import Main from './main/Main';
 
 function App() {
 
-  const [page, setPage] = React.useState('home')
+  const [page, setPage] = React.useState('Home')
 
   return (
-    <div>
-      <Header/>
-      {/* <Main page = { {page : this.page, setPage: this.setPage} }/> */}
-      <Footer/>
-    </div>
+    <>
+      <BrowserRouter>
+          <Header/>
+          <Main/>
+          <Footer/>
+      </BrowserRouter>
+    </>
   );
 }
 

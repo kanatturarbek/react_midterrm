@@ -1,0 +1,28 @@
+/* .segment{
+    display:flex;
+    width: 200px;
+    height: 250px
+} */
+.segment{
+    width:200px;
+    height:fit-content;
+    margin: 5px;
+    transition:1s;
+}
+img{
+    width:inherit;
+    height:250px;
+}
+.title{
+    position:relative;
+    width:inherit;
+    font-family: inherit;
+    font: 10px;
+    background:rgb(61, 61, 61);
+    color:aliceblue;
+}
+.segment:hover{
+    width:270px;
+    transition:1s;
+}
+.segment:hov

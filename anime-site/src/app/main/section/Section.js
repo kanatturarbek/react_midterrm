@@ -1,16 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Section.css'
 
 function Section(props) {
 
-    const picUrl = props.data.series[props.id].picUrl
-    const title = props.data.series[props.id].title
-
     return (
-        <div>
-            <img url = {picUrl}></img>
-            <h2>{title}</h2>
-        </div>
+        <Link to='/mov_5'>
+            <div className='M_1'>
+                <img src={moves.img.img5} className='M_1'  alt="" />
+                <div className='m_1'>Гангстер коп и Дьявол</div>
+            </div>
+        </Link>
     )
 }
 

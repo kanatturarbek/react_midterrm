@@ -18,7 +18,7 @@
     color: #fff;   
 }
 .logo:hover{
-    text-decoration: underline rgb(255, 255, 255) 5px;
+    text-decoration: underline blue 5px;
 }
 .menu1{
     display: flex;
@@ -41,5 +41,5 @@
     text-decoration: none;
 }
 .link:hover{
-    text-decoration: underline  rgb(255, 255, 255) 5px;
+    text-decoration: underline  blue 5px;
 }
