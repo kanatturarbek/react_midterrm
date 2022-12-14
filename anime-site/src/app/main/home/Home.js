@@ -5,7 +5,7 @@ import './Home.css'
 function Home(props) {
 
     return (
-        <AnimeList></AnimeList>
+        <h1>LOLOL</h1>
     )
 }
 

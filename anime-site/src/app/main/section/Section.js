@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import { Link } from 'react-router-dom'
 import './Section.css'
 
 function Section(props) {
-
+    console.log(props)
     return (
-        <Link to='/mov_5'>
-            <div className='M_1'>
-                <img src={moves.img.img5} className='M_1'  alt="" />
-                <div className='m_1'>Гангстер коп и Дьявол</div>
+        <Link to = {'' + props.id}>
+            <div className = "container">
+                <img src = {props.src}/>
+                <div className='title'>{props.title}</div>
             </div>
         </Link>
     )

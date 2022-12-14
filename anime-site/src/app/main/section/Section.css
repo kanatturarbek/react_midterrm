@@ -3,26 +3,33 @@
     width: 200px;
     height: 250px
 } */
-.segment{
-    width:200px;
-    height:fit-content;
-    margin: 5px;
+
+.container {
+    width: 250px;
+    height: 370px;
+    background-color: black;
+    transition: 1s;
+}
+
+.container:hover > img{
+    height:310px;
+    width:260px;
+    margin-top:-5px;
+    margin-left:-5px;
     transition:1s;
 }
+.container:hover {
+    width:260px;
+}
+
 img{
-    width:inherit;
-    height:250px;
-}
-.title{
-    position:relative;
-    width:inherit;
-    font-family: inherit;
-    font: 10px;
-    background:rgb(61, 61, 61);
-    color:aliceblue;
-}
-.segment:hover{
-    width:270px;
+    width: 250px;
+    height: 300px;
+    margin-right:5px;
     transition:1s;
 }
-.segment:hov
+
+.title{
+    color:white;
+    display:block;
+}

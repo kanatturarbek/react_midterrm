@@ -1,0 +1,54 @@
+.upper {
+    display: flex;
+    flex-direction: row;
+    height:500px;
+}
+
+.season_image {
+    margin: 20px 20px;
+    padding:5px;
+    background-color: brown;
+    border: dotted;
+    border-color: rgb(255, 174, 0);
+    height:450px;
+    width:330px;
+}
+
+.description {
+    margin: 20px 20px;
+    background-color: chartreuse;
+    height:fit-content;
+    max-width: 900px;
+    border: dotted;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.button {
+    height: 70px;
+    min-width: 70px;
+    width:fit-content;
+    background-color: blue;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    border-width: 10px;
+    color: aliceblue;
+    border-style: groove;
+    border-color: aliceblue;
+}
+
+.video {
+    width: fit-content;
+    margin-left: 10px;
+    padding: 10px 10px 10px 10px;
+    background-color:brown;
+    border-style:dashed;
+    border-color:black;
+}
