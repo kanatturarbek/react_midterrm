@@ -9,7 +9,8 @@ import VideoScreen from './video_screen/VideoScreen';
 
 function Main(props) {
     return (
-        <div>
+        <>
+        <div className='back'>
             <Routes>
                 <Route exact path='/' element = {<Home/>}/>
                 <Route exact path='/home' element = {< Home/>}/>
@@ -19,7 +20,12 @@ function Main(props) {
                 <Route path='/movies/:id' element = {<VideoScreen title = "movies"/>}/>
                 <Route exact path='/shop' element = {<Shop/>}/>
             </Routes>
+            <div className='footer_img1'>
+                    <div className='footer2'></div>
+                    <div className='footer1'></div>
+            </div>
         </div>
+        </>
     )
 }
 

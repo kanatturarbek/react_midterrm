@@ -5,12 +5,14 @@ import './Section.css'
 function Section(props) {
     console.log(props)
     return (
+        <>
         <Link to = {'' + props.id}>
             <div className = "container">
-                <img src = {props.src}/>
+                <img className = "container" src = {props.src}/>
                 <div className='title'>{props.title}</div>
             </div>
         </Link>
+        </>
     )
 }
 

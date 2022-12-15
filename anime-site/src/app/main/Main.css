@@ -1,0 +1,28 @@
+.back{
+    background-color: #222;
+    /* display: flex;
+    justify-content: space-around; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.footer_img1{
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    padding-top: 150px;
+    margin-bottom: -100px;
+}
+.footer2{
+    width: 436px;
+    height: 650px;
+    background: url(https://naruto-base.su/naruto_1s/230.png);
+}
+
+.footer1{
+    width: 436px;
+    height: 650px;
+    background: url(https://www.pngmart.com/files/7/Naruto-Ashura-Transparent-PNG.png);
+    background-size: 100% 100%;
+}
