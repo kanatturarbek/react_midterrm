@@ -23,21 +23,24 @@ function VideoScreen(props) {
     }
 
     let episodes = [];
+    try {
+        for(let i = 0; i <database[params.id].seasons.length; i ++) {
+            episodes.push(<div className = 'button' onClick = {() => setEpisode(i)} key = {i}>{i}</div>);
+        }
 
-    for(let i = 0; i <database[params.id].seasons.length; i ++) {
-        episodes.push(<div className = 'button' onClick = {() => setEpisode(i)} key = {i}>{i}</div>);
-    }
-
-    return (
-        <div>
-            <div className = 'upper'>
-                <img className='season_image' src = {database[params.id].img}/>
-                <div className = 'description'>{database[params.id].description}</div>
+        return (
+            <div>
+                <div className = 'upper'>
+                    <img className='season_image' src = {database[params.id].img}/>
+                    <div className = 'description'>{database[params.id].description}</div>
+                </div>
+                <div className = 'buttons'>{episodes}</div>
+                <div className = 'video'>{database[params.id].seasons[episode].description}</div>
             </div>
-            <div className = 'buttons'>{episodes}</div>
-            <div className = 'video'>{database[params.id].seasons[episode].description}</div>
-        </div>
-    )
+        )
+    } catch (error) {
+        
+    }
 }
 
 export default VideoScreen;
