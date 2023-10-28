@@ -13,6 +13,8 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   
+
+  
   const handleSearch = (event) => {
       const query = event.target.value;
       setSearchTerm(query);

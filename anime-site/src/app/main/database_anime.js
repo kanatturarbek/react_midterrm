@@ -14,6 +14,8 @@ export const database_anime=[
             frameborder="0" 
             allowfullscreen allow="autoplay *; fullscreen *">
           </iframe>,
+
+          
           likecount:0
         },
         {

@@ -6,7 +6,7 @@ class Database extends React.Component {
             isLoaded: false,
         }
     }
-
+//fetching
     componentDidMount() {
         fetch('127.0.0.1')
     }

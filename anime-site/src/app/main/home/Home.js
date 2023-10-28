@@ -9,6 +9,8 @@ function Home(props) {
 
 
         React.useEffect(() => { // Pass in a callback function!
+        
+        
             fetch('91.185.30.130:5000/api').
         then((request) => request.json()).
         then((request) => {setRequest(request)})

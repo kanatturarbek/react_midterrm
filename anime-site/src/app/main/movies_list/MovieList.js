@@ -7,10 +7,14 @@ function MovieList(props) {
 
     const rows = []
 
+
+
     for(let i = 0; i < 11; i ++) {
         rows.push(
         <div className='section'>
             <Section  
+
+            
                 className="section" 
                 key = {i} 
                 id = {i} 

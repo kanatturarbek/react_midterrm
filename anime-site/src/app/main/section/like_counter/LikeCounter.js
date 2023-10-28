@@ -15,6 +15,8 @@ export class likeCounter extends Component{
             
         })
     }
+
+    
     DislikePost=()=>{
         this.setState(({DislikeCount})=>{
             return{

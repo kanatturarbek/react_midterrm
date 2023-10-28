@@ -9,6 +9,8 @@ function AnimeList(props) {
 
     console.log(database_anime)
 
+
+    
     for(let i = 0; i < 4; i ++) {
         rows.push(<Section 
             className="section" 

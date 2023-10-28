@@ -14,6 +14,8 @@ function VideoScreen(props) {
     const [episode, setEpisode] = useState(0);
 
     if(props.title == 'anime') {
+
+        
         database = database_anime;
     } else if(props.title == 'movies'){
         database = database_movies;
