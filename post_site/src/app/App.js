@@ -4,7 +4,7 @@ import './App.css';
 import Footer from './footer/Footer';
 import Header from './header/Header';
 import Main from './main/Main';
-import {database_anime} from "./main/database_anime"
+import {database_posts} from "./main/database_posts"
 import { useState } from 'react';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       const query = event.target.value;
       setSearchTerm(query);
   
-      const filteredResults = database_anime.filter((item) =>
+      const filteredResults = database_posts.filter((item) =>
         item.name.toLowerCase().includes(query.toLowerCase())
       );
   

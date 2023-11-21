@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { json } from 'react-router-dom';
-import AnimeList from '../anime_list/AnimeList';
+
 import './Home.css'
 
 function Home(props) {
@@ -14,6 +14,7 @@ function Home(props) {
             fetch('91.185.30.130:5000/api').
         then((request) => request.json()).
         then((request) => {setRequest(request)})
+        .then((res) => res.json())
         });
 
     console.log(request);

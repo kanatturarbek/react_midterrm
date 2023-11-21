@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom';
-import { database_anime } from '../database_anime';
-import { database_movies} from '../database_movies';
+import { database_posts} from '../database_posts';
 import './VideoScreen.css';
 import { likeCounter } from '../section/like_counter/LikeCounter';
 
@@ -16,9 +15,9 @@ function VideoScreen(props) {
     if(props.title == 'anime') {
 
         
-        database = database_anime;
+      //  database = database_anime;
     } else if(props.title == 'movies'){
-        database = database_movies;
+        database = database_posts;
     } else {
         return (
             <h1>ERROR</h1>
@@ -36,13 +35,9 @@ function VideoScreen(props) {
                     <img className='season_image' src = {database[params.id].img}/>
                     <div className='fon2'>
                         <h1>Name: {database[params.id].name}</h1>
-                        <p>Год выпуска: {database[params.id].year}</p>
+                        <p>Автор: {database[params.id].author}</p>
                         <div className = 'description'><p>Описание:  {database[params.id].description}</p></div>
                     </div>
-                </div>
-                <div className = 'buttons'>{episodes}</div>
-                <div className='blog'>
-                    <div className = 'video'>{database[params.id].seasons[episode].description}</div>
                 </div>
             </div>
         )
@@ -53,13 +48,12 @@ function VideoScreen(props) {
                     <img className='season_image' src = {database[params.id].img}/>
                     <div className='fon2'>
                         <h1>Name: {database[params.id].name}</h1>
-                        <p>Год выпуска: {database[params.id].year}</p>
+                        <p>Автор:  {database[params.id].author}</p>
+                        <p>Ключевые слова:  {database[params.id].keywords}</p>
                         <div className = 'description'><p>Описание:  {database[params.id].description}</p></div>
                     </div>
                 </div>
-                <div className='blog'>
-                    <div className = 'video'>{database[params.id].html_code}</div>
-                </div>
+            
             </div>
         )
     }

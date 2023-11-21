@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '../section/Section';
-import './MovieList.css';
-import { database_movies } from '../database_movies.js';
+import './Post.css';
+import { database_posts} from '../database_posts.js';
 
 function MovieList(props) {
 
@@ -18,8 +18,8 @@ function MovieList(props) {
                 className="section" 
                 key = {i} 
                 id = {i} 
-                src = {database_movies[i]['img']}
-                title = {database_movies[i]['name']}
+                src = {database_posts[i]['img']}
+                title = {database_posts[i]['name']}
             />
         </div>
         );
